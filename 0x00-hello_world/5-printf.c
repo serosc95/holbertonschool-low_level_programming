@@ -1,7 +1,7 @@
 #include<stdio.h>
 /**
 * main - using printf
-Â
+*
 * Use the function printf
 *
 * You are not allowed to use the function puts
