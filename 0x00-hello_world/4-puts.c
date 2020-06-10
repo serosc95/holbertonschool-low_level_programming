@@ -1,11 +1,13 @@
 #include <stdio.h>
 /**
- * main - using puts
- * @void: void
+ * main - Entry point
+ * @void: no paramater
  *
- * Description: Uses puts to outputUse the function puts
- *		You are not allowed to use printf
- *		Your program should end with the value 0
+ * Description: Uses puts to output
+ *
+ * "Programming is like building a multilingual puzzle
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
