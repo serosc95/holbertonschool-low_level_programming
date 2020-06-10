@@ -9,6 +9,8 @@
  * Your program should return 0
  *
  * You might have to install the package libc6-dev-i386 on your Linux (Vagrant) to test the -m32 gcc option
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
