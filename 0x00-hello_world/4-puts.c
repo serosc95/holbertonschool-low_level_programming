@@ -1,13 +1,9 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * @void: no paramater
- *
- * Description: Uses puts to output
- *
- * "Programming is like building a multilingual puzzle
- *
- * Return: Always 0 (Success)
+ * main - using puts
+ * Use the function puts
+ * You are not allowed to use printf
+ * Your program should end with the value 0
  */
 int main(void)
 {
