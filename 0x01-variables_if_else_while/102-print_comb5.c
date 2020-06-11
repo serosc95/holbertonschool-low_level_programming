@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int i, n, m, p;
+	int i, n, m, p, aux1, aux2;
 
 	for (i = 48; i < 58; i++)
 	{
@@ -18,7 +18,9 @@ int main(void)
 			{
 				for (p = 48; p < 58; p++)
 				{
-					if (i <= m && n < p)
+					aux1 = i * 10 + n;
+					aux2 = m * 10 + p;
+					if (aux1 < aux2)
 					{
 						putchar(i);
 						putchar(n);
