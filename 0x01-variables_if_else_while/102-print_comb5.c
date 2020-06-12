@@ -11,11 +11,8 @@ int main(void)
 	int i, n, m, p, aux1, aux2;
 
 	for (i = 48; i < 58; i++)
-	{
 	for (n = 48; n < 58; n++)
-	{
 	for (m = 48; m < 58; m++)
-	{
 	for (p = 48; p < 58; p++)
 	{
 	aux1 = i * 10 + n;
@@ -31,9 +28,6 @@ int main(void)
 	{
 	putchar(44);
 	putchar(32);
-	}
-	}
-	}
 	}
 	}
 	}
