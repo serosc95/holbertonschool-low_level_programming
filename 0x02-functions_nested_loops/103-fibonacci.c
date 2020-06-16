@@ -8,9 +8,8 @@
 int main(void)
 {
 	long int suma = 1, a = 1, b, sumapar = 0;
-	int i;
 
-	for (i = 2; i < 48; i++)
+	while (a < 4000000)
 	{
 		b = suma;
 		suma = suma + a;
