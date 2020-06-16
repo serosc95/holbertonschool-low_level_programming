@@ -1,6 +1,8 @@
 /**
  * _isalpha - print Alphabet lowercase or uppercase
  *
+ @c: character
+ *
  * Return: On success 1.
  */
 int _isalpha(int c)
