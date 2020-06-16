@@ -1,7 +1,7 @@
 /**
  * _isalpha - print Alphabet lowercase or uppercase
  *
- @c: character
+ * @c: character
  *
  * Return: On success 1.
  */
