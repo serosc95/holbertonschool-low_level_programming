@@ -7,15 +7,18 @@
  */
 int main(void)
 {
-	long int i, suma = 1, a = 1, b;
+	long int suma = 1, a = 1, b;
+	int i;
 
 	for (i = 2; i < 50; i++)
 	{
 		b = suma;
 		suma = suma + a;
 		a = b;
-		printf("%li, ", a);
+		printf("%li", a);
+		if (i != 49)
+			printf(", ");
 	}
-	printf("%li\n", a);
+	printf("\n");
 	return (0);
 }
