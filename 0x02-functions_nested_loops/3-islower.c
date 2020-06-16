@@ -1,7 +1,7 @@
 /**
- * _islower - print Alphabet Holberton
+ * _islower - print Alphabet lowercase
  *
- * Return: On success 1.
+ * Return: On success 1
 */
 int _islower(int c)
 {

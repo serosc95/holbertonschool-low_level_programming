@@ -1,8 +1,8 @@
 #include"holberton.h"
 /**
- * print_ - print Alphabet Holberton
+ * times_table - print the 9 times table
  *
- * Return: On success 1.
+ * Return: void
  */
 void times_table(void)
 {

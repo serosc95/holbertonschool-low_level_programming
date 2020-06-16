@@ -1,8 +1,8 @@
 #include"holberton.h"
 /**
- * print_ - print Alphabet Holberton
+ * print_sign - print the sign of a number
  *
- * Return: On success 1.
+ * Return: 1, 0 or -1.
  */
 int print_sign(int n)
 {

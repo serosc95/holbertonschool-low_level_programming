@@ -1,5 +1,5 @@
 /**
- * _isalpha - print Alphabet Holberton
+ * _isalpha - print Alphabet lowercase or uppercase
  *
  * Return: On success 1.
  */

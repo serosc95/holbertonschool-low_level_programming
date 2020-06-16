@@ -1,10 +1,7 @@
 /**
- * add - adds two numbers
+ * add - adds of numbers
  *
- * @a: first num to add to b
- * @b: second num to add to a
- *
- * Return: the result
+ * Return: result
  */
 int add(int a, int b)
 {

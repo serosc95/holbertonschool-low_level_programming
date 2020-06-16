@@ -1,8 +1,8 @@
 #include"holberton.h"
 /**
- * _abs - print Alphabet Holberton
+ * _abs - print the absolute value of an integer
  *
- * Return: On success 1.
+ * Return: result
  */
 int _abs(int n)
 {

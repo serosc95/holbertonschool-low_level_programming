@@ -1,11 +1,8 @@
 #include <stdio.h>
 /**
- * add - adds two numbers
+ * print_to_98 - prints all natural numbers from n to 98
  *
- * @a: first num to add to b
- * @b: second num to add to a
- *
- * Return: the result
+ * Return: vacio
  */
 void print_to_98(int n)
 {

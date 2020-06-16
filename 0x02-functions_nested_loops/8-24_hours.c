@@ -1,8 +1,8 @@
 #include"holberton.h"
 /**
- * print_ - print Alphabet Holberton
+ * jack_bauer - print every minute of the day
  *
- * Return: On success 1.
+ * Return: void
  */
 void jack_bauer(void)
 {
