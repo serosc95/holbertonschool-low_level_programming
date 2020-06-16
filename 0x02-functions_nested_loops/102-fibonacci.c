@@ -10,13 +10,13 @@ int main(void)
 	long int suma = 1, a = 1, b;
 	int i;
 
-	for (i = 2; i < 50; i++)
+	for (i = 2; i < 51; i++)
 	{
 		b = suma;
 		suma = suma + a;
 		a = b;
 		printf("%li", a);
-		if (i != 49)
+		if (i != 50)
 			printf(", ");
 	}
 	printf("\n");
