@@ -10,7 +10,7 @@ int main(void)
 	unsigned long int suma = 1, a = 1, b;
 	int i;
 
-	for (i = 2; i < 98; i++)
+	for (i = 2; i < 100; i++)
 	{
 		b = suma;
 		suma = suma + a;
