@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	double suma = 1, a = 1, b;
+	unsigned long int suma = 1, a = 1, b;
 	int i;
 
 	for (i = 2; i < 98; i++)
@@ -15,7 +15,7 @@ int main(void)
 		b = suma;
 		suma = suma + a;
 		a = b;
-		printf("%f", a);
+		printf("%lu", a);
 		if (i != 51)
 			printf(", ");
 	}
