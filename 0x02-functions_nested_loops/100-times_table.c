@@ -27,15 +27,15 @@ void print_times_table(int n)
 				_putchar(aux + '0');
 			if (b < n)
 			{
-				_putchar(',');
+			_putchar(',');
+			_putchar(' ');
+			if (a * (b + 1) < 10)
+			{
+			_putchar(' ');
+			_putchar(' ');
+			}
+			else if (a * (b + 1) < 100)
 				_putchar(' ');
-				if (a * (b + 1) < 10)
-				{
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else if (a * (b + 1) < 100)
-					 _putchar(' ');
 			}
 		}
 		_putchar(10);
