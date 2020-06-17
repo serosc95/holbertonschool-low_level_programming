@@ -10,13 +10,13 @@ int main(void)
 	double suma = 1, a = 1, b;
 	int i;
 
-	for (i = 2; i < 98; i++)
+	for (i = 2; i < 100; i++)
 	{
 		b = suma;
 		suma = suma + a;
 		a = b;
 		printf("%.0f", a);
-		if (i != 97)
+		if (i != 99)
 			printf(", ");
 	}
 	printf("\n");
