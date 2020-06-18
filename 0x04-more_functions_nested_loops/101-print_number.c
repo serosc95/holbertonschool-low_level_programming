@@ -1,4 +1,5 @@
 #include"holberton.h"
+void cicloMemoria(int n);
 /**
  * print_number - prints an integer.
  * @n: number.
