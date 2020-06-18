@@ -1,5 +1,4 @@
 #include"holberton.h"
-void cicloMemoria(int n);
 /**
  * print_number - prints an integer.
  * @n: number.
@@ -7,20 +6,16 @@ void cicloMemoria(int n);
  */
 void print_number(int n)
 {
-	if (n >= 0)
-		cicloMemoria(n);
-	else
-	{
-		_putchar('-');
-		cicloMemoria(-n);
-	}
-}
+	unsigned int b;
 
-void cicloMemoria(int n)
-{
-	if (n / 10 != 0)
+	if (n < 0)
 	{
-		cicloMemoria(n / 10);
+		b = -n;
+		_putchar('-');
 	}
-	_putchar((n % 10) + '0');
+	else
+		b = n;
+	if (b / 10)
+		print_number(b / 10);
+	_putchar((b % 10) + '0');
 }
