@@ -13,6 +13,9 @@ char *rot13(char *s)
 	for (i = 0; s[i] != '\0'; i++)
 		for (j = 0; letras1[j] != '\0'; j++)
 			if (s[i] == letras1[j])
+			{
 				s[i] = letras2[j];
+				break;
+			}
 	return (s);
 }
