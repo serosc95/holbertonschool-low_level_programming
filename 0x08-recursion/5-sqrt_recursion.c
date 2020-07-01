@@ -1,6 +1,6 @@
 #include"holberton.h"
 /**
- * sqrt - natural square root of a number.
+ * _sqrt - natural square root of a number.
  * @n: integer.
  * @x: integer.
  * Return: number integer.
@@ -12,7 +12,7 @@ int _sqrt(int n, int x)
 	if (x * x < n)
 	{
 		aux = _sqrt(n, x + 1);
-		return(aux);
+		return (aux);
 	}
 	else if (x * x == n)
 		return (x);
