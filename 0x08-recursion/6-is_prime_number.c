@@ -2,7 +2,7 @@
 /**
  * number_prime - detect prime numbers.
  * @n: integer.
- * @x: integer.
+ * @a: integer.
  * Return: number integer.
  */
 int number_prime(int n, int a)
