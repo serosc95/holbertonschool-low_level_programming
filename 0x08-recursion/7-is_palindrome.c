@@ -42,7 +42,7 @@ int is_palindrome(char *s)
 {
 	int l1, x;
 
-	if (*s != '\0')
+	if (*s != '\0' && *(s + 1) != '\0')
 	{
 		l1 = is_string(s);
 		x = _compare(s, l1 - 1, 0);
