@@ -24,14 +24,16 @@ int is_string(char *s)
  */
 int _compare(char *s, int l1, int l2)
 {
+	int aux = 1;
+
 	if (l1 > l2)
 	{
 		if (s[l1] == s[l2])
-			_compare(s, --l1, ++l2);
+			aux = _compare(s, --l1, ++l2);
 		else
 			return (0);
 	}
-	return (1);
+	return (1 * aux);
 }
 /**
  * is_palindrome - detect prime numbers.
@@ -42,7 +44,7 @@ int is_palindrome(char *s)
 {
 	int l1, x;
 
-	if (*s != '\0' && *(s + 1) != '\0')
+	if (*s != '\0')
 	{
 		l1 = is_string(s);
 		x = _compare(s, l1 - 1, 0);
