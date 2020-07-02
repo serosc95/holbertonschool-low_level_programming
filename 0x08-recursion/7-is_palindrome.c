@@ -16,8 +16,10 @@ int is_string(char *s)
 	return (0);
 }
 /**
- * is_palindrome - detect prime numbers.
+ * _compare - detect prime numbers.
  * @s: pointer.
+ * @l1: integer.
+ * @l2: integer.
  * Return: number integer.
  */
 int _compare(char *s, int l1, int l2)
@@ -25,11 +27,7 @@ int _compare(char *s, int l1, int l2)
 	if (l1 > l2)
 	{
 		if (s[l1] == s[l2])
-		{
-			l1--;
-			l2++;
-			_compare(s, l1, l2);
-		}
+			_compare(s, --l1, ++l2);
 		else
 			return (0);
 	}
