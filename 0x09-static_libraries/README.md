@@ -1,1 +1,1 @@
-# Lenguaje C - Static libraries
+# Static libraries
