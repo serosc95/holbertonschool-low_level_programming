@@ -2,6 +2,7 @@
 #include<stdio.h>
 /**
  * main - prints its name.
+ * @argc: integer.
  * @argv: pointer array.
  * Return: integer zero.
  */
