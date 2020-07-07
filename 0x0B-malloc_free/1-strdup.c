@@ -1,5 +1,6 @@
 #include"holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * _strdup - allocated space in memory.
  * @str: pointer.
