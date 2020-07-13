@@ -15,15 +15,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *cp_name, *cp_owner;
 
 	s = malloc(sizeof(dog_t));
-	if (s != NULL)
+	if (s != NULL && name != NULL && owner != NULL)
 	{
-		if (name != NULL && owner != NULL)
-		{
+		if (name != NULL)
 			while (name[len1] != '\0')
 				len1++;
+		if (owner != NULL)
 			while (owner[len2] != '\0')
-				len2++;
-		}
+                                len2++;
 		cp_name = malloc(len1 + 1 * sizeof(char));
 		cp_owner = malloc(len2 + 1 * sizeof(char));
 		if (cp_name == NULL || cp_owner == NULL)
