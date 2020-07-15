@@ -4,7 +4,8 @@
  * int_index - executes a function given as a parameter.
  * @array: array.
  * @size: size of array.
- * @action: function pointer.
+ * @cmp: function pointer.
+ * Return: integer.
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
