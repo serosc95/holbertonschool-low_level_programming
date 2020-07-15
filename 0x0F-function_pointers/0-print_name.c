@@ -4,10 +4,10 @@
 /**
  * print_name - prints a name.
  * @name: name to print.
- * @F: function to print.
+ * @f: function to print.
  */
 void print_name(char *name, void (*f)(char *))
 {
 	if (name != NULL &&  f != NULL)
-		f(name); 
+		f(name);
 }
