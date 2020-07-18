@@ -1,37 +1,37 @@
 #include"variadic_functions.h"
 /**
  * prin_char - print char.
- * @ch: char to print.
+ * @valist: char to print.
  */
-void prin_char(va_list ch)
+void prin_char(va_list valist)
 {
-	printf("%c", va_arg(ch, int));
+	printf("%c", va_arg(valist, int));
 }
 /**
  * prin_integer - print integer.
- * @in: int to print.
+ * @valist: int to print.
  */
-void prin_integer(va_list in)
+void prin_integer(va_list valist)
 {
-	printf("%d", va_arg(in, int));
+	printf("%d", va_arg(valist, int));
 }
 /**
  * prin_float - print float.
- * @fl: float to print.
+ * @valist: float to print.
  */
-void prin_float(va_list fl)
+void prin_float(va_list valist)
 {
-	printf("%f", va_arg(fl, double));
+	printf("%f", va_arg(valist, double));
 }
 /**
  * prin_string - print string.
- * @str: string to print.
+ * @valist: string to print.
  */
-void prin_string(va_list str)
+void prin_string(va_list valist)
 {
 	char *ptr;
 
-	ptr = va_arg(str, char *);
+	ptr = va_arg(valist, char *);
 	if (ptr != NULL)
 		printf("%s", ptr);
 	else
