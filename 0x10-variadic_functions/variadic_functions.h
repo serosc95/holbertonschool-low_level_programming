@@ -9,10 +9,12 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, unsigned int n, ...);
 void print_all(const char * const format, ...);
 
-typedef struct print_t
+struct print_t
 {
 	char *data;
 	void (*ptr)(va_list);
-} prin_t;
+};
+
+typedef struct print_t prin_t;
 
 #endif
