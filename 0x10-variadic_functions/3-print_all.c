@@ -62,7 +62,7 @@ void print_all(const char * const format, ...)
 			if (format[i] == *(direc[j].data))
 			{
 				direc[j].fun(valist);
-				if (format[i + 1] != NULL)
+				if (format[i + 1] != '\0')
 					printf(", ");
 				break;
 			}
