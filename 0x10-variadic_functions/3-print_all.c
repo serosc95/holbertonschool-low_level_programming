@@ -32,10 +32,9 @@ void prin_string(va_list valist)
 	char *ptr;
 
 	ptr = va_arg(valist, char *);
-	if (ptr != NULL)
-		printf("%s", ptr);
-	else
-		printf("(nil)");
+	if (ptr == NULL)
+		ptr = "(nil)";
+	printf("%s", ptr);
 }
 /**
  * print_all - print all.
@@ -52,24 +51,25 @@ void print_all(const char * const format, ...)
 		{NULL, NULL}
 	};
 	int i = 0, j;
+	char *separator = "";
 
 	va_start(valist, format);
 	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
-		while (direc[j].data != NULL)
+		while (j < 4)
 		{
 			if (format[i] == *(direc[j].data))
 			{
+				printf("%s", separator);
 				direc[j].fun(valist);
-				if (format[i + 1] != '\0')
-					printf(", ");
+				separator = ", ";
 				break;
 			}
 			j++;
 		}
 		i++;
 	}
-	va_end(valist);
 	printf("\n");
+	va_end(valist);
 }
