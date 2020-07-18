@@ -15,6 +15,4 @@ struct print_t
 	void (*ptr)(va_list);
 };
 
-typedef struct print_t prin_t;
-
 #endif
