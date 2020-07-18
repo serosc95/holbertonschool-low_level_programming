@@ -1,9 +1,4 @@
 #include"variadic_functions.h"
-
-void prin_char(va_list ch);
-void prin_integer(va_list in);
-void prin_float(va_list fl);
-void prin_string(va_list str);
 /**
  * prin_char - print char.
  * @ch: char to print.
