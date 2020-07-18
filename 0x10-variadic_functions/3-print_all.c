@@ -54,7 +54,7 @@ void print_all(const char * const format, ...)
 	int i = 0, j;
 
 	va_start(valist, format);
-	while (format[i] != '\0')
+	while (format[i])
 	{
 		j = 0;
 		while (direc[j].data != NULL)
@@ -62,7 +62,7 @@ void print_all(const char * const format, ...)
 			if (format[i] == *(direc[j].data))
 			{
 				direc[j].fun(valist);
-				if (format[i + 1] != '\0' )
+				if (format[i + 1])
 					printf(", ");
 				break;
 			}
