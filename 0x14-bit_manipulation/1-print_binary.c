@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 	{
 		aux = n;
 		for (j = 0; aux > 0; j++)
-			aux = aux / 2;
+			aux = aux >> 1;
 		for (j = j - 1; j >= 0; j--)
 		{
 			if ((n >> j) & 1)
