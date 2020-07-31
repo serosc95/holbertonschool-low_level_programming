@@ -16,7 +16,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	{
 		if ((cmp & 1) != 0)
 			count++;
-		cmp >>=1;
+		cmp >>= 1;
 	}
 	return (count);
 }
