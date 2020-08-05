@@ -34,7 +34,7 @@ void error_close(int file)
  */
 int main(int argc, char **argv)
 {
-	int file_from, file_to, wr;
+	int file_from, file_to;
 	char *buffer[1024];
 	int caracter = 1;
 
@@ -54,8 +54,7 @@ int main(int argc, char **argv)
 		caracter = read(file_from, buffer, 1024);
 		if (caracter == -1)
 			error_read(argv[1]);
-		wr = write(file_to, buffer, caracter);
-		if (wr == -1)
+		if (write(file_to, buffer, caracter) == -1)
 			error_write(argv[2]);
 	}
 	if (close(file_from) == -1)
