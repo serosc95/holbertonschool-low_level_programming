@@ -55,9 +55,9 @@ int main(int argc, char **argv)
 		if (write(file_to, buffer, caracter) == -1)
 			error_write(argv[2]);
 		caracter = read(file_from, buffer, caracter);
-		if (caracter == -1)
-			error_read(argv[1]);
 	}
+	if (caracter == -1)
+		error_read(argv[1]);
 	if (close(file_from) == -1)
 		error_close(file_from);
 	if (close(file_to) == -1)
