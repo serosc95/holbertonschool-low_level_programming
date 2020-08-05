@@ -52,12 +52,12 @@ int main(int argc, char **argv)
 	while (caracter > 0)
 	{
 		caracter = read(file_from, buffer, 1024);
+		if (caracter == -1)
+			error_read(argv[1]);
 		wr = write(file_to, buffer, caracter);
 		if (wr == -1)
 			error_write(argv[2]);
 	}
-	if (caracter == -1)
-		error_read(argv[1]);
 	if (close(file_from) == -1)
 		error_close(file_from);
 	if (close(file_to) == -1)
