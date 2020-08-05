@@ -49,13 +49,14 @@ int main(int argc, char **argv)
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (file_to == -1)
 		error_write(argv[2]);
+	caracter = read(file_from, buffer, 1024);
 	while (caracter > 0)
 	{
-		caracter = read(file_from, buffer, 1024);
-		if (caracter == -1)
-			error_read(argv[1]);
 		if (write(file_to, buffer, caracter) == -1)
 			error_write(argv[2]);
+		caracter = read(file_from, buffer, caracter);
+		if (caracter == -1)
+			error_read(argv[1]);
 	}
 	if (close(file_from) == -1)
 		error_close(file_from);
