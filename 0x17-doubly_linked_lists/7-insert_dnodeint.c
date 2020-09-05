@@ -30,11 +30,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			return (NULL);
 		}
 	}
-    if (!aux->next)
-    {
-        free(newlist);
-        return (add_dnodeint_end(h, n));
-    }
+	if (!aux->next)
+	{
+		free(newlist);
+		return (add_dnodeint_end(h, n));
+	}
 	newlist->next = aux->next;
 	newlist->prev = aux;
 	(aux->next)->prev = newlist;
