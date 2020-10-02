@@ -15,6 +15,7 @@ hash_node_t *add_node(hash_node_t **head, const char *key, const char *value)
 	{
 		if (strcmp(key, aux->key) == 0)
 		{
+			free(aux->value);
 			aux->value = strdup(value);
 			return (*head);
 		}
