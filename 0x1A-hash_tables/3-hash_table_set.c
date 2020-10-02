@@ -8,8 +8,18 @@
  */
 hash_node_t *add_node(hash_node_t **head, const char *key, const char *value)
 {
-	hash_node_t *newlist;
+	hash_node_t *newlist, *aux;
 
+	aux = *head;
+	while (aux)
+	{
+		if (strcmp(key, aux->key) == 0)
+		{
+			aux->value = strdup(value);
+			return (*head);
+		}
+		aux = aux->next;
+	}
 	newlist = malloc(sizeof(hash_node_t));
 	if (newlist)
 	{
@@ -42,4 +52,3 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	ht->array[index] = newnode;
 	return (1);
 }
-
