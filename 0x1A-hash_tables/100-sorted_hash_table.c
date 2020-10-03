@@ -152,8 +152,36 @@ void shash_table_print(const shash_table_t *ht)
 		{
 			printf("%s'%s': '%s'", aux, node->key, node->value);
 			aux = ", ";
-			node = node->next;
+			node = node->snext;
 		}
 	}
 	printf("}\n");
 }
+
+/**
+ * shash_table_print_rev - prints a hash table ordered.
+ * @ht: is the table.
+ */
+void shash_table_print_rev(const shash_table_t *ht)
+{
+	unsigned long int i;
+	shash_node_t *node;
+	char *aux = "";
+
+	if (!ht)
+		return;
+	node = ht->stail;
+	printf("{");
+	for (i = 0; i < ht->size; i++)
+	{
+		node = ht->array[i];
+		while (node)
+		{
+			printf("%s'%s': '%s'", aux, node->key, node->value);
+			aux = ", ";
+			node = node->sprev;
+		}
+	}
+	printf("}\n");
+}
+
