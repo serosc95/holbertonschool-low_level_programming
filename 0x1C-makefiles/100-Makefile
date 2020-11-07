@@ -5,9 +5,7 @@ NAME = holberton
 RM = rm
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: initProgram
-
-initProgram: m.h $(OBJ)
+all: m.h $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
