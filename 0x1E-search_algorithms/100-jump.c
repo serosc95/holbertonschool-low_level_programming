@@ -8,16 +8,15 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	size_t i = 0, inicio = 0, sqr;
+	size_t i = 0, inicio = 0;
 
 	if (array == NULL || size == 0)
 		return (-1);
-	sqr = sqrt(size);
 	while (array[i] < value && i < size)
 	{
 		printf("Value checked array [%ld] = [%d]\n", i, array[i]);
 		inicio = i;
-		i += sqr;
+		i += sqrt(size);
 	}
 	printf("Value found between indexes [%ld] and [%ld]\n", inicio, i);
 	i = i < size - 1 ? i : size - 1;
